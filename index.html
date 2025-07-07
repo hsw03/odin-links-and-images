@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Absolute Links -->
+
+    <body>
+
+        <h1>Homepage</h1>
+
+        <!-- Absolute Links -->
+
+        <!-- <a> element wraps text or another HTML element we want to be a link -->
+        <!-- an HTML attribute gives additional information to the HTML element -->
+        <h4>only 'a' element</h4>
+        <a>About the Odin Project</a>
+        
+        <!-- <href> (hypertext reference) attribute is the destination we want our 
+            link to go to -->
+        <!-- any text wrapped without the <href> attribute will appear as plain text -->
+        <!-- this method opens links in the same tab as the webpage containing them -->
+        <h4>with 'href' attribute</h4>
+        <a href="https://www.theodinproject.com/about">About the Odin Project</a>
+
+        <!-- <target> attribute specifies WHERE the link is opened -->
+        <!-- _self value is taken on as default, which opens the link in the current tab -->
+        <!-- _blank value should be specified, which opens the link in a new tab/window -->
+
+        <!-- <rel> attribute describes the relation between the current page and the linked 
+            document -->
+            <!-- noopener value ensures that a link opened in a new tab/window cannot interact 
+             with the original page -->
+            <!-- noreferrer value ensures privacy and security -->
+        <h4>with 'target' and 'rel' attributes</h4>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About the Odin Project</a>
+        
+        <!-- clicking this link will open to the About Page created (about.html) -->
+        <!-- this will only work if index.html and about.html are in the same directory -->
+        <!-- moving about.html into a new directory, this link will be broken -->
+        <h4>About Page</h4>
+        <a href="about.html">About</a>
+
+        <!-- including pages/ updates the new location of the file relative to the index file -->
+        <h4>About Page (fixed)</h4>
+        <a href="pages/about.html">About</a>
+
+        <!-- prepending ./ before the link prevents other issues by specifying that your code 
+         should start looking for the file/directory relative to the current directory -->
+        <h4>About Page (fixed again)</h4>
+        <a href="./pages/about.html">About</a>
+
+        <h1>Images</h1>
+
+        <!-- Images -->
+        
+        <!-- <img> element displays an image in HTML -->
+        <!-- <img> is a void element that does not require a closing tag -->
+
+        <!-- <src> attribute embeds an image into the page by telling the browser where the
+            image file is located -->
+        <!-- <src> attribute embeds an image using both absolute and relative paths -->
+        <h4>Image in Homepage</h4>
+        <img src="./images/dog.jpg">
+       
+    </body>
+</html>
